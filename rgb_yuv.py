@@ -1,19 +1,19 @@
 import numpy as np
 
 
-def rgb2yuv(rgb_values):
+def rgb2yuv(rgb_values):  # funcio rgb a yuv
 
-    if len(rgb_values) == 3:
+    if len(rgb_values) == 3:  # comprobem que hi hagui 3 canals
         R = rgb_values[0]
         G = rgb_values[1]
         B = rgb_values[2]
 
-        Y = round(0.299*R + 0.587*G + 0.114*B)
+        Y = round(0.299*R + 0.587*G + 0.114*B)  # fem la conversio
         U = round(-0.168736*R - 0.331264*G + 0.5*B +128)
         V = round(0.5*R - 0.418688*G - 0.081312*B +128)
         yuv = [Y, U, V]
 
-        for i in range(0, len(yuv)):
+        for i in range(0, len(yuv)):  # reajustem el valors que han superat els llindars 0 i 255
             if yuv[i]>255:
                 yuv[i] = 255
             elif yuv[i]<0:
