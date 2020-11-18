@@ -45,4 +45,5 @@ el fitxer conté un petit main al final que invoca la funció.
 **Exercici 5.**
 
 l'script d'aquest últim exercici: *DCT_encoder.py* converteix la imatge Lenna.jpg a DCT i l'inversa. 
-![Lenna DCT Output](https://github.com/paumonterop/P1_SCAV_VIDEO/tree/main/Imatges/Lenna_output.jpg?raw=true)
+
+![Lenna DCT Output](https://github.com/paumonterop/P1_SCAV_VIDEO/tree/main/Imatges/output_Lenna.jpg?raw=true)
